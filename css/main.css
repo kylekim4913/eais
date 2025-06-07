@@ -1,0 +1,363 @@
+@charset "utf-8";
+@import url('common.css');
+
+@font-face {
+  font-family: 'brig';
+  src: url(../fonts/brig.ttf);
+}
+@font-face {
+  font-family: 'brig_bold';
+  src: url(../fonts/brig_bold.ttf);
+}
+* {
+font-family: brig;
+}
+
+
+
+body{
+    height:auto;
+}
+#topBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+.header{
+    width: 100%;
+    height: 60px;
+    border: 1px solid black;
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+      z-index: 999;
+
+}
+.head_sec1{
+    width:50%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: left;
+    padding:12px;
+    padding-left:30px;
+}
+
+.searchbar select {
+  padding: 8px 36px 8px 12px; /* Add more right padding for the arrow */
+  font-size: 1em;
+  border-radius: 20px;
+  background-color: gainsboro;
+  color: gray;
+  width: 300%;
+
+  appearance: none; /* Remove native arrow */
+  background-image: url("data:image/svg+xml,%3Csvg fill='%23666' height='12' viewBox='0 0 24 24' width='12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px;
+}
+
+.head_sec2{
+    width:50%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 30px;
+}
+
+.head_txt{
+    width: auto;
+    height: 30px;
+    
+    padding-top: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;  
+    font-size: .8em;  
+    font-style: italic;
+    color:gray
+}
+
+.head_txt2{
+    width: auto;
+    height: 30px;
+    
+    padding-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: brig_bold;
+}
+
+
+/* Slide-in panel */
+.slide-panel {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+  transition: right 0.3s ease;
+  z-index: 1000;
+  padding-top:50px;
+  
+}
+
+
+.slide-panel.open {
+  right: 0;
+}
+.gotomenu{
+  display: block;
+  margin-top:20px;
+}
+.panel-content {
+  padding: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* year-nav */
+
+.year-nav {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 10px 30px;
+  
+  
+  position: sticky;
+  top:20;
+}
+
+.year-nav button {
+  border: 1px solid #000;
+  background: #fff;
+  padding: 6px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: 'Brig', sans-serif;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.year-section {
+  padding: 10px 10px 30px 30px;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+/*secton2024*/
+.year-title {
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.tag-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 10px 0;
+}
+
+#tag-bg {
+  position: fixed;
+  top: 0;
+  left: 50%;
+ height: 900px;
+  width: 1000px;
+   transform: translateX(-50%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  
+  pointer-events: none;
+}
+
+
+.tag {
+  background-color: white;
+  color: black;
+  border: inset 2px black ;
+  padding: 6px 14px;
+  border-radius: 999px;
+  display: inline-block;
+  transition: filter 0.2s ease;
+  position: relative;
+  z-index: 3;
+  font-size: 3em;
+  font-family: brig_bold;
+  mix-blend-mode: difference;
+}
+
+
+
+.tag.hovered {
+  mix-blend-mode: difference;
+  background-color: white;
+  color: black;
+  
+  border: inset 1px solid black;
+  
+  z-index: 3;
+
+  
+}
+
+
+
+
+/*secton2024*/
+.icon{
+    width: 36px;
+    height: 30px;
+    border: 1px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.section1{
+    width: 100%;
+    height: 6vh;
+    border: 1px solid black;
+}
+.section2{
+    width: 100%;
+    height: 80vh;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headline1{
+    width:30vw;
+    height: 10vh;
+    border: 1px solid black;
+}
+
+.sec1{
+    width: 30vw;
+    height: 50vh;
+    text-align: center;
+}
+
+.button1{
+    width: 100px;
+    height:40px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display:inline-block;
+    margin-top: 2vh;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.sec2_top{
+    display: inline-block;
+    border: 1px solid black;
+    width: 49vw;
+    height: 49vw;
+}
+.sec2_bot{
+    display: inline-block;
+    border: 1px solid black;
+    width: 49vw;
+    height: 49vw;
+}
+
+.headline2{
+    width:30vw;
+    height: 10vh;
+    border: 1px solid black;
+}
+
+.section4{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.gal{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:30vw;
+}
+.box1{
+    width:80vw;
+    height:30vw;
+    border: 1px solid black;
+}
+.gal_nav{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:20px;
+}
+.circle{
+    border-radius: 50%;
+    border: 1px solid black;
+    width:10px;
+    height: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.search-note{
+  margin:30px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding-left:15vw;
+  padding-right:15vw;
+}
+
+.gallery img {
+  
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #ddd;
+  background-color: white;
+}
+
+.tag-meta{
+    margin-top: 30px;
+    margin-left: 30px;
+}

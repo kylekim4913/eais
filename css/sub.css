@@ -1,0 +1,140 @@
+@charset "utf-8";
+@import url('common.css');
+
+@font-face {
+  font-family: 'brig';
+  src: url(../fonts/brig.ttf);
+}
+@font-face {
+  font-family: 'brig_bold';
+  src: url(../fonts/brig_bold.ttf);
+}
+* {
+font-family: brig;
+}
+
+
+
+body{
+    height:auto;
+    padding-left: 30px;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    padding:30px;
+}
+
+.year{
+  display: flex;
+  justify-content: left;
+  padding: 10px;
+  
+  font-size: 5em;
+  font-family:brig_bold;
+}
+
+.main-tag {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 6px;
+  padding: 10px;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.m-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid black;
+  border-radius: 999px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.m-tag:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
+.poster-section{
+  margin-bottom: 15px;
+}
+
+.poster-image{
+  width:20vw;
+  display: block;
+  
+  border: .5px solid gainsboro;
+}
+.poster-title{
+  font-family: brig_bold;
+  font-size: 3em;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.poster-credit{
+ font-size: 2em; 
+ display: inline-block;
+}
+b{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.poster-desc{
+  margin-top: 20px;
+  font-size: 1em;
+  width:40vw;
+}
+.seg-imgs{
+  position: relative;
+    -webkit-text-stroke: .4px black;
+  color:white;
+  font-family: brig_bold;
+  font-size: 1em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.taginimg1{
+  position: absolute;
+  top:10px;
+  left:10px;
+  display: block;
+}
+
+.taginimg2{
+  position: absolute;
+  top:30px;
+  left:10px;
+  display: block;
+}
+
+.taginimg3{
+  position: absolute;
+  top:50px;
+  left:10px;
+  display: block;
+}
+
+h3{
+  font-size:1em;
+  color:gainsboro;
+}
+.award{
+  margin-top:20px;
+  margin-bottom:120px;
+}
+
+.awardlogo{
+  width:100px;
+  height:100px;
+}
