@@ -74,6 +74,15 @@ header{
   
   border: .5px solid gainsboro;
 }
+
+.big{
+  width: 25vw;
+}
+
+.bigger{
+  width: 40vw;
+}
+
 .poster-title{
   font-family: brig_bold;
   font-size: 3em;
@@ -83,12 +92,15 @@ header{
 
 .poster-credit{
  font-size: 2em; 
- display: inline-block;
+ display: block;
 }
-b{
-  margin-left: 10px;
-  margin-right: 10px;
+
+.poster-credit b{
+  margin-right: 20px;
 }
+
+
+
 .poster-desc{
   margin-top: 20px;
   font-size: 1em;
@@ -130,11 +142,21 @@ h3{
   color:gainsboro;
 }
 .award{
-  margin-top:20px;
+  margin-top:60px;
   margin-bottom:120px;
 }
 
 .awardlogo{
   width:100px;
   height:100px;
+}
+
+.reddot{
+  height:100px;
+  width:auto;
+}
+
+.ed{
+  background-color: black;
+  
 }
